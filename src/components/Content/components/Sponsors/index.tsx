@@ -13,16 +13,23 @@ export default class Header extends React.Component<someProps> {
     this.state = {};
   }
   render() {
+    let { content } = this.props;
     return (
       <div>
         <DateHead />
-        <div className={style.Sponsors}>
+        <div
+          className="richText"
+          dangerouslySetInnerHTML={{
+            __html: content
+          }}
+        />
+        {/* <div className={style.Sponsors}>
           <TipTitle name="Sponsors" />
         </div>
         <div className="flex center column">
           <img className={style.announcedImg} src={announcedImg} alt="" />
           <div className={style.announced}>To be announced！</div>
-        </div>
+        </div> */}
       </div>
     );
   }

@@ -44,6 +44,12 @@ export default class Header extends React.Component<someProps> {
     return (
       <div>
         <DateHead />
+        <div
+          className="richText"
+          dangerouslySetInnerHTML={{
+            __html: content
+          }}
+        />
         {/* <div className={style.Accommodation}>
           <TipTitle name="Accommodation" />
         </div>

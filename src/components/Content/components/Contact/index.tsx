@@ -11,17 +11,24 @@ export default class Header extends React.Component<someProps> {
     this.state = {};
   }
   render() {
+    let { content } = this.props;
     return (
       <div>
         <DateHead />
-        <div className={style.Sponsors}>
+        <div
+          className="richText"
+          dangerouslySetInnerHTML={{
+            __html: content
+          }}
+        />
+        {/* <div className={style.Sponsors}>
           <TipTitle name="Contact" />
         </div>
         <div className={style.content}>
           For any inquiries, please contact us via email:
           <br />
           <span className={style.green}>XXXX@XXXXX</span>
-        </div>
+        </div> */}
       </div>
     );
   }

@@ -17,10 +17,17 @@ export default class Header extends React.Component<someProps> {
     this.state = {};
   }
   render() {
+    let { content } = this.props;
     return (
       <div>
         <DateHead />
-        <div className={style.Programme}>
+        <div
+          className="richText"
+          dangerouslySetInnerHTML={{
+            __html: content
+          }}
+        />
+        {/* <div className={style.Programme}>
           <TipTitle name="Programme" />
         </div>
         <div className={style.Tentative}>Tentative arrangement:</div>
@@ -38,7 +45,7 @@ export default class Header extends React.Component<someProps> {
         <div className={style.tips}>
           <span>*</span>Program subject to change until it is finalized by late
           November 2019.
-        </div>
+        </div> */}
       </div>
     );
   }

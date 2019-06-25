@@ -170,6 +170,7 @@ export default class Header extends React.Component<someProps> {
       <div>
         <DateHead />
         <div
+          className="richText"
           dangerouslySetInnerHTML={{
             __html: content
           }}

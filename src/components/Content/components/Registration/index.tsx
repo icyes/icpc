@@ -29,9 +29,16 @@ export default class Header extends React.Component<someProps> {
     super(props);
   }
   render() {
+    let { content } = this.props;
     return (
       <div>
-        <div className={style.Programme}>
+        <div
+          className="richText"
+          dangerouslySetInnerHTML={{
+            __html: content
+          }}
+        />
+        {/* <div className={style.Programme}>
           <TipTitle name="Registration and Abstract Submission" />
         </div>
         <div className={style.Deadline} style={{ margin: "26px 0 21px 0 " }}>
@@ -66,7 +73,7 @@ export default class Header extends React.Component<someProps> {
             headColor="#40444F"
             title={[{ text: "On site (May 31, 2020)", width: 100 }]}
           />
-        </div>
+        </div> */}
       </div>
     );
   }

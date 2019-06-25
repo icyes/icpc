@@ -12,10 +12,17 @@ export default class Header extends React.Component<someProps> {
     this.state = {};
   }
   render() {
+    let { content } = this.props;
     return (
       <div>
         <DateHead />
-        <div className={style.Sponsors}>
+        <div
+          className="richText"
+          dangerouslySetInnerHTML={{
+            __html: content
+          }}
+        />
+        {/* <div className={style.Sponsors}>
           <TipTitle name="Visa Information" />
         </div>
         <div className={style.text}>
@@ -23,7 +30,7 @@ export default class Header extends React.Component<someProps> {
           process of your visa, and if you need a Letter of Invitation <br />
           to apply for visa, please contact the conference secretary at
           <span className={style.green}> XXXX@xxxxx.</span>
-        </div>
+        </div> */}
       </div>
     );
   }
