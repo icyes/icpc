@@ -1,5 +1,14 @@
+@import '~antd/dist/antd.css';
+@import './style/main.scss';
+
+html,
+body {
+  background: rgb(245, 249, 250);
+  min-width: 1160px
+}
+
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .App-logo {
@@ -23,10 +32,13 @@
   color: #61dafb;
 }
 
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

@@ -1,0 +1,51 @@
+@import "@/style/comment.scss";
+
+.Programme {
+  margin-top: 50px;
+  margin-bottom: 21px;
+}
+
+.Tentative {
+  font-family: Arial-BoldItalicMT;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: left;
+  @extend .italic;
+  @extend .bold;
+}
+
+.may {
+  font-family: Arial-BoldItalicMT;
+  font-size: 18px;
+  color: #6A942E;
+  letter-spacing: 0;
+  text-align: left;
+  @extend .italic;
+  @extend .bold;
+}
+
+.Scientific {
+  margin-top: 50px
+}
+
+
+.tips {
+  display: flex;
+  align-items: flex-start;
+  font-family: Arial-BoldItalicMT;
+  font-size: 16px;
+  color: #1C0000;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 18px;
+  margin-top: 30px;
+}
+
+.tips>span {
+  font-family: Arial-BoldItalicMT;
+  font-size: 16px;
+  color: #F62E39;
+  letter-spacing: 0;
+  text-align: left;
+}

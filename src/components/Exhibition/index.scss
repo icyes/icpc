@@ -1,0 +1,10 @@
+.exhibition {
+  width: 100%;
+  height: 460px;
+}
+
+.ex-img {
+  @extend .exhibition;
+  object-fit: cover;
+  object-position: center center;
+}

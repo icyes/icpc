@@ -1,0 +1,29 @@
+@import "@/style/comment.scss";
+
+$max-width:280px;
+
+.menus {
+  width: $max-width;
+  flex: 0 0 auto;
+  background: #DFECF2;
+  padding: 3px 19px 10px 22px;
+  min-height: 629px;
+}
+
+.mli {
+  font-family: Arial-BoldMT;
+  font-size: 16px;
+  color: #40444F;
+  letter-spacing: 0;
+  text-align: left;
+  margin-top: 26px;
+  @extend .bold;
+}
+
+.mli:hover {
+  cursor: pointer;
+}
+
+.mli.active {
+  @extend .green;
+}

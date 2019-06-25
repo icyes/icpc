@@ -1,0 +1,33 @@
+/* global flex */
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-flow: column
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.center {
+  @extend .justify-center;
+  @extend .align-center;
+}
+
+.wrap {
+  flex-wrap: wrap
+}
+
+.justify-end {
+  justify-content: flex-end;
+}

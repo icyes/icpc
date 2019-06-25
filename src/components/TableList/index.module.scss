@@ -1,0 +1,57 @@
+@import "@/style/comment.scss";
+
+$boxWidth:900px;
+
+.tableBox {
+  // width: $boxWidth;
+}
+
+.title {
+  width: 100%;
+  height: 50px;
+  font-family: Arial-BoldItalicMT;
+  font-size: 20px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  padding-left: 20px;
+  border-radius: 2px 2px 0px 0px;
+}
+
+.line {
+  text-align: left;
+
+}
+
+.cell {
+
+  height: 50px;
+  font-family: ArialMT;
+  font-size: 16px;
+  color: #40444F;
+  letter-spacing: 0;
+  text-align: left;
+  padding: 0 26px;
+
+}
+
+
+// .cell div:first-child {
+//   width: 120px;
+//   text-align: center;
+// }
+
+// .cell div:nth-child(2) {
+//   width: 200px;
+//   text-align: center;
+// }
+
+
+.tbody {
+  border: 1px solid #F4F4F4;
+  box-shadow: 0 10px 10px 2px #eee;
+}
+
+.tbody>div:nth-child(2n-1) {
+  background: #F4F4F4;
+}

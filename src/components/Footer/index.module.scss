@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  height: 240px;
+  background: rgba(0, 0, 0, 0.4);
+  background: url(../../assets/imgs/footImg.png) no-repeat center center;
+}
+
+.top {
+  font-family: HelveticaNeueLT-BlackItalic;
+  font-size: 26px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: left;
+  font-style: italic;
+  font-weight: bold;
+
+}
+
+.top img {
+  height: 30px;
+}
+
+.tip {
+  font-family: Arial-BoldMT;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  margin-top: 28px;
+}
+
+.tip>div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+}
+
+.tip img {
+  height: 18px;
+  margin-right: 15.3px;
+}

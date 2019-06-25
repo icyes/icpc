@@ -1,0 +1,49 @@
+@import "@/style/comment.scss";
+
+.Accommodation {
+  margin: 50px 0 23px;
+}
+
+.AccoText {
+  font-family: Arial-ItalicMT;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: left;
+  @extend .italic;
+}
+
+.title {
+  font-family: Arial-BoldMT;
+  font-size: 20px;
+  color: #6A942E;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.des {
+  font-family: ArialMT;
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.imgs {
+  width: 820px;
+}
+
+.picBox {
+  width: 50%;
+}
+
+.pic {
+  width: 390px;
+  height: 270px;
+  flex: 0 0 auto;
+  margin-top: 19px;
+}
+
+.Hotel {
+  margin-top: 42px;
+}

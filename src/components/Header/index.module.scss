@@ -1,0 +1,56 @@
+@import "@/style/comment.scss";
+
+.header {
+  height: 6.8vw;
+  padding: 2.1% 8.5% 0.8% 8.3%;
+  box-sizing: border-box;
+}
+
+.left {
+  width: 8.8vw;
+  height: 4vw;
+  // height: 3.9%;
+}
+
+.right {
+  width: 46vw;
+  height: 3.8vw;
+}
+
+.t-date {
+  font-family: HelveticaNeueLT-BlackItalic;
+  font-size: 26px;
+  letter-spacing: 0;
+  text-align: left;
+  @extend .green;
+  @extend .italic;
+  @extend .bold;
+}
+
+.t-title {
+  font-family: HelveticaNeueLT-BlackItalic;
+  font-size: 26px;
+  color: #3F3F3F;
+  letter-spacing: 0;
+  text-align: left;
+  @extend .italic;
+  @extend .bold;
+}
+
+.t-nbo {
+  font-family: HelveticaNeueLT-BoldExtObl;
+  font-size: 20px;
+  color: #434343;
+  letter-spacing: -0.38px;
+  text-align: left;
+  @extend .italic;
+  @extend .bold;
+}
+
+.t-icpc {
+  text-align: left;
+  font-size: 50px;
+  line-height: 40px;
+  font-weight: bolder;
+  color: rgb(141, 201, 56)
+}

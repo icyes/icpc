@@ -1,0 +1,21 @@
+@import "@/style/comment.scss";
+
+.name {
+  font-family: Arial-BoldItalicMT;
+  font-size: 16px;
+  color: #6A942E;
+  letter-spacing: 0;
+  text-align: left;
+  @extend .italic;
+  @extend .bold;
+}
+
+.country {
+  font-family: Arial-ItalicMT;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 18px;
+  @extend .italic;
+}

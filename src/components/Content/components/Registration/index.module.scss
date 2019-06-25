@@ -1,0 +1,25 @@
+@import "@/style/comment.scss";
+
+.Fees {
+  font-family: Arial-ItalicMT;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.Deadline {
+  font-family: Arial-ItalicMT;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: left;
+
+  span {
+    @extend .green;
+  }
+}
+
+.Fees {
+  margin-bottom: 34px;
+}

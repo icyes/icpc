@@ -1,0 +1,35 @@
+@import "@/style/comment.scss";
+
+.Speakers {
+  font-family: Arial-ItalicMT;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 18px;
+  @extend .italic;
+}
+
+.Organisers {
+  margin: 50px 0 25px;
+}
+
+.Committee {
+  font-family: Arial-BoldItalicMT;
+  font-size: 18px;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: left;
+  @extend .bold;
+  @extend .italic;
+  margin-bottom: 30px;
+}
+
+.boxSet {
+  width: 25%;
+  margin-bottom: 40px;
+}
+
+.Local {
+  margin-top: 50px;
+}
