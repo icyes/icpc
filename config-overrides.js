@@ -7,7 +7,9 @@ const path = require("path");
 const {
   override,
   fixBabelImports,
-  addWebpackAlias
+  addWebpackAlias,
+  useBabelRc,
+  addBabelPresets
 } = require('customize-cra');
 
 

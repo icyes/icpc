@@ -81,10 +81,15 @@ export default class Header extends React.Component<someProps> {
         />
         {/* <div className="Conference">
           <TipTitle name="Conference Overview" />
-        </div> */}
+        </div>
 
-        {/* <div className="Overview">
-
+        <div className="Overview">
+          <div
+            className="richText"
+            dangerouslySetInnerHTML={{
+              __html: text_OverView
+            }}
+          />
         </div>
         <div className="Session">
           <TipTitle name="Session Topics" />

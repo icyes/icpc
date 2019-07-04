@@ -39,6 +39,9 @@ export default class Header extends React.Component<
           content
         });
       } catch (error) {
+        this.setState({
+          content: ""
+        });
         console.log(error);
       }
     });

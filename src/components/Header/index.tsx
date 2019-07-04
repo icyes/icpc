@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./index.module.scss";
+import { OSSURL } from "../../service/config.js";
 import headLeft from "@/assets/imgs/headLeft.png";
 import headRight from "@/assets/imgs/headRight.png";
 export default class Header extends React.Component {
@@ -7,12 +8,12 @@ export default class Header extends React.Component {
     return (
       <div className={`flex between ${style.header}`}>
         <div className="flex">
-          <img className={style.left} src={headLeft} alt="" />
+          <img className={style.left} src={OSSURL + "headLeft.png"} alt="" />
           {/* <div className="t-icpc">ICPC</div>
           <div className="t-nbo">Ningbo，2020</div> */}
         </div>
         <div className="flex justify-end">
-          <img className={style.right} src={headRight} alt="" />
+          <img className={style.right} src={OSSURL + "headRight.png"} alt="" />
           {/* <div className="t-title">
             2020 International Conference on Phosphorus Chemistry
           </div>

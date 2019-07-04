@@ -122,31 +122,36 @@ const List2 = [
   [{ text: "新药院全体老师", width: 20 }]
 ];
 
-const users = [
-  { name: "Frank H. Ebetino", country: "USA, Chairman" },
-  { name: "Koop Lammertsma", country: "The Netherlands" },
-  { name: "Remi Chauvin", country: "France" },
-  { name: "Charles E. McKenna", country: "USA, Co-Chairman" },
-  { name: "Alexander Gabibov", country: "Russia" },
-  { name: "Christian Müller", country: "Germany" },
-  { name: "Declan Gilheany", country: "Ireland" },
-  { name: "Oleg Sinyashin", country: "Russia" },
-  { name: "Hansjörg Grützmacher", country: "Switzerland" },
-  { name: "Chris Slootweg", country: "The Netherlands" },
-  { name: "Evamarie Hey-Hawkins", country: "Germany" },
-  { name: "Chris Stevens", country: "Belgium" },
-  { name: "Muriel Hissler", country: "France" },
-  { name: "Chris Spilling", country: "USA" },
-  { name: "Pawel Kafarski", country: "Poland" },
-  { name: "David Wiemer", country: "USA" },
-  { name: "Vitalii Kalchenko", country: "Ukraine" },
-  { name: "Gary Woodward", country: "USA" },
-  { name: "Takayuki Kawashima", country: "Japan" },
-  { name: "Anton Vidal", country: "Spain" },
-  { name: "György Keglevich", country: "Hungary" },
-  { name: "Masaaki Yoshifuji", country: "Japan" },
-  { name: "Yufen Zhao", country: "China" }
-];
+// let Users = [
+//   { name: "Frank H. Ebetino", country: "USA, Chairman" },
+//   { name: "Koop Lammertsma", country: "The Netherlands" },
+//   { name: "Remi Chauvin", country: "France" },
+//   { name: "Charles E. McKenna", country: "USA, Co-Chairman" },
+//   { name: "Alexander Gabibov", country: "Russia" },
+//   { name: "Christian Müller", country: "Germany" },
+//   { name: "Declan Gilheany", country: "Ireland" },
+//   { name: "Oleg Sinyashin", country: "Russia" },
+//   { name: "Hansjörg Grützmacher", country: "Switzerland" },
+//   { name: "Chris Slootweg", country: "The Netherlands" },
+//   { name: "Evamarie Hey-Hawkins", country: "Germany" },
+//   { name: "Chris Stevens", country: "Belgium" },
+//   { name: "Muriel Hissler", country: "France" },
+//   { name: "Chris Spilling", country: "USA" },
+//   { name: "Pawel Kafarski", country: "Poland" },
+//   { name: "David Wiemer", country: "USA" },
+//   { name: "Vitalii Kalchenko", country: "Ukraine" },
+//   { name: "Gary Woodward", country: "USA" },
+//   { name: "Takayuki Kawashima", country: "Japan" },
+//   { name: "Anton Vidal", country: "Spain" },
+//   { name: "György Keglevich", country: "Hungary" },
+//   { name: "Masaaki Yoshifuji", country: "Japan" },
+//   { name: "Yufen Zhao", country: "China" },
+//   //
+//   { name: "Andrei Karasik", country: "Russia" },
+//   { name: "Yan-Mei Li", country: "China" },
+//   { name: "Jozef Drabowicz", country: "Poland" },
+//   { name: "Maria Caporali", country: "Italy" }
+// ];
 interface someProps {
   content: any;
 }
@@ -157,6 +162,41 @@ export default class Header extends React.Component<someProps> {
   }
   render() {
     let lineBox = [];
+    let Users = [
+      { name: "Frank H. Ebetino", country: "USA, Chairman" },
+      { name: "Koop Lammertsma", country: "The Netherlands" },
+      { name: "Remi Chauvin", country: "France" },
+      { name: "Charles E. McKenna", country: "USA, Co-Chairman" },
+      { name: "Alexander Gabibov", country: "Russia" },
+      { name: "Christian Müller", country: "Germany" },
+      { name: "Declan Gilheany", country: "Ireland" },
+      { name: "Oleg Sinyashin", country: "Russia" },
+      { name: "Hansjörg Grützmacher", country: "Switzerland" },
+      { name: "Chris Slootweg", country: "The Netherlands" },
+      { name: "Evamarie Hey-Hawkins", country: "Germany" },
+      { name: "Chris Stevens", country: "Belgium" },
+      { name: "Muriel Hissler", country: "France" },
+      { name: "Chris Spilling", country: "USA" },
+      { name: "Pawel Kafarski", country: "Poland" },
+      { name: "David Wiemer", country: "USA" },
+      { name: "Vitalii Kalchenko", country: "Ukraine" },
+      { name: "Gary Woodward", country: "USA" },
+      { name: "Takayuki Kawashima", country: "Japan" },
+      { name: "Anton Vidal", country: "Spain" },
+      { name: "György Keglevich", country: "Hungary" },
+      { name: "Masaaki Yoshifuji", country: "Japan" },
+      { name: "Yufen Zhao", country: "China" },
+      //
+      { name: "Andrei Karasik", country: "Russia" },
+      { name: "Yan-Mei Li", country: "China" },
+      { name: "Jozef Drabowicz", country: "Poland" },
+      { name: "Maria Caporali", country: "Italy" }
+    ];
+    let users = Users.sort((a: any, b: any) => {
+      var x = a.name;
+      var y = b.name;
+      return x < y ? -1 : x > y ? 1 : 0;
+    });
     for (let i = 0; i < users.length; i++) {
       lineBox.push(
         <div className={style.boxSet} key={i}>

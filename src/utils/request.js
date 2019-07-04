@@ -6,6 +6,10 @@ import {
   extend
 } from 'umi-request';
 import {
+  PUBLICURL,
+  PREAPI
+} from "../service/config"
+import {
   notification
 } from 'antd';
 const codeMessage = {
@@ -39,7 +43,6 @@ const errorHandler = error => {
       status,
       url
     } = response;
-    console.log('error---')
     notification.error({
       message: `请求错误 ${status}: ${url}`,
       description: errorText,
@@ -52,7 +55,7 @@ const errorHandler = error => {
 
 const request = extend({
   maxCache: 10, // 最大缓存个数, 超出后会自动清掉按时间最开始的一个.
-  prefix: 'http://192.168.5.248:90/api/', // prefix
+  prefix: PUBLICURL + PREAPI, // prefix
   headers: {
     // 统一的headers
   },

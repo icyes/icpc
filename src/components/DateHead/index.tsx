@@ -21,7 +21,7 @@ export default class Header extends React.Component {
         </div>
         <div className={`flex column ${style.deadline}`}>
           <div className={style.title}>DEADLINES</div>
-          <div className={style.cont}>Registration - 31 May 2020</div>
+          <div className={style.cont}>Registration - 15 April 2020</div>
           <div className={style.cont}>Abstract - 28 February 2020</div>
         </div>
         <div>
