@@ -24,8 +24,12 @@ export default class Header extends React.Component<SomeProps, SomeState> {
     let { current } = this.state;
     return (
       <div className="flex main-body">
-        <Menu changeCurrent={this.changeCurrent} current={current} />
-        <Content current={current} />
+        <div className="fleft">
+          <Menu changeCurrent={this.changeCurrent} current={current} />
+        </div>
+        <div className="fright w80">
+          <Content current={current} />
+        </div>
       </div>
     );
   }

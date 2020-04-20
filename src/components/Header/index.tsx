@@ -6,19 +6,18 @@ import headRight from "@/assets/imgs/headRight.png";
 export default class Header extends React.Component {
   render() {
     return (
-      <div className={`flex between ${style.header}`}>
-        <div className="flex">
-          <img className={style.left} src={OSSURL + "headLeft.png"} alt="" />
-          {/* <div className="t-icpc">ICPC</div>
-          <div className="t-nbo">Ningbo，2020</div> */}
-        </div>
-        <div className="flex justify-end">
-          <img className={style.right} src={OSSURL + "headRight.png"} alt="" />
-          {/* <div className="t-title">
-            2020 International Conference on Phosphorus Chemistry
-          </div>
-          <div className="t-date">Ningbo,China/May 31-June 4, 2020</div> */}
-        </div>
+      <div className={`flex align-center between ${style.header}`}>
+        <img
+          className={`fleft ${style.left}`}
+          src={OSSURL + "headLeft.png"}
+          alt=""
+        />
+
+        <img
+          className={`fright ${style.right}`}
+          src={OSSURL + "headRight.png"}
+          alt=""
+        />
       </div>
     );
   }

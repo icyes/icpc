@@ -14,7 +14,7 @@ export default class Header extends React.Component {
           background: `url(${OSSURL}footImg.png) no-repeat center center`
         }}
       >
-        <div className="flex column">
+        <div className={`inline-flex column ${style.main} foot-title`}>
           <div className={style.top}>
             <img src={OSSURL + "footTitle.png"} alt="" />
             {/* ICPC 2020 Organizing Committee  */}

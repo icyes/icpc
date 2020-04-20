@@ -192,18 +192,18 @@ export default class Header extends React.Component<someProps> {
       { name: "Jozef Drabowicz", country: "Poland" },
       { name: "Maria Caporali", country: "Italy" }
     ];
-    let users = Users.sort((a: any, b: any) => {
-      var x = a.name;
-      var y = b.name;
-      return x < y ? -1 : x > y ? 1 : 0;
-    });
-    for (let i = 0; i < users.length; i++) {
-      lineBox.push(
-        <div className={style.boxSet} key={i}>
-          <DoubLine name={users[i].name} country={users[i].country} />
-        </div>
-      );
-    }
+    // let users = Users.sort((a: any, b: any) => {
+    //   var x = a.name;
+    //   var y = b.name;
+    //   return x < y ? -1 : x > y ? 1 : 0;
+    // });
+    // for (let i = 0; i < users.length; i++) {
+    //   lineBox.push(
+    //     <div className={style.boxSet} key={i}>
+    //       <DoubLine name={users[i].name} country={users[i].country} />
+    //     </div>
+    //   );
+    // }
 
     let { content } = this.props;
     return (

@@ -26,30 +26,54 @@ export default class Header extends React.Component<
     this.getContent();
   }
   componentDidUpdate(prevProps: { current: any }) {
-    if (this.props.current != prevProps.current) {
+    if (this.props.current !== prevProps.current) {
       this.getContent();
     }
   }
   getContent() {
+    const _this = this;
     let { current } = this.props;
-    request(`articleByKey?tag=${Number(current) + 1}`).then(res => {
-      try {
-        let { content } = res.data;
-        this.setState({
+    request(
+      "get",
+      `articleByKey?tag=${Number(current) + 1}`,
+      {},
+      function(res: any) {
+        let content = "";
+        if (res && res.data) {
+          content = res.data.content;
+        }
+        _this.setState({
           content
         });
-      } catch (error) {
-        this.setState({
-          content: ""
-        });
+      },
+      function(error: any) {
         console.log(error);
       }
-    });
+    );
+    // request(`articleByKey?tag=${Number(current) + 1}`).then(res => {
+    //   // try {
+    //   // let {
+    //   //   data: { content }
+    //   // } = res;
+    //   let content = "";
+    //   if (res && res.data) {
+    //     content = res.data.content;
+    //   }
+    //   this.setState({
+    //     content
+    //   });
+    //   // } catch (error) {
+    //   //   this.setState({
+    //   //     content: ""
+    //   //   });
+    //   //   console.log(error);
+    //   // }
+    // });
   }
   render() {
     let { content } = this.state;
     let { current } = this.props;
-    let cont = null;
+    let cont;
     switch (Number(current)) {
       case 0:
         cont = <Home content={content} />;

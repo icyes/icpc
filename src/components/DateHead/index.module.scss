@@ -31,10 +31,13 @@
   letter-spacing: 0;
   text-align: left;
   cursor: pointer;
+  text-align: center;
+  line-height: 40px;
 }
 
 .deadline {
-  margin: 0 8.3% 0 2.3%;
+  // margin: 0 8.3% 0 2.3%;
+  padding: 0 100px;
 }
 
 .iconRight {

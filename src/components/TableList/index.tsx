@@ -41,7 +41,7 @@ export default class Header extends React.Component<someProps> {
         >
           {titleBox}
         </div>
-        <div className={style.tbody}>
+        {/* <div className={style.tbody}>
           {list.map((item: any, index: any) => {
             return (
               <div className={`flex align-center ${style.cell}`} key={index}>
@@ -59,7 +59,7 @@ export default class Header extends React.Component<someProps> {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     );
   }

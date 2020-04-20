@@ -32,8 +32,16 @@ body {
   color: #61dafb;
 }
 
+.richText {
+  clear: both;
+}
+
 .richText img {
   /* width: 100%; */
+}
+
+.w80 {
+  width: 80%;
 }
 
 

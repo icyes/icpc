@@ -7,7 +7,6 @@ import Exhibition from "./components/Exhibition";
 import Footer from "./components/Footer";
 import MainBody from "./components/MainBody";
 import CopyRight from "./components/CopyRight";
-
 const App: React.FC = () => {
   return (
     <div className="App">
@@ -15,7 +14,9 @@ const App: React.FC = () => {
       <div className="main">
         <Exhibition />
         <MainBody />
-        <Footer />
+        <div className="fclear">
+          <Footer />
+        </div>
         <CopyRight />
       </div>
     </div>
