@@ -13,7 +13,7 @@
     "core-js": "^3.1.4",
     "customize-cra": "^0.2.13",
     "events": "^3.0.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "postcss-flexbugs-fixes": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "react": "^16.8.6",
